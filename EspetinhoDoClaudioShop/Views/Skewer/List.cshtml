@@ -1,0 +1,21 @@
+﻿@model EspetinhoDoClaudioShop.ViewModels.SkewerListViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Espetinho do Claúdio</title>
+</head>
+<body>
+    <h1>@ViewBag.CurrentCategory</h1>
+    @foreach (var skewer in Model)
+    {
+        <div>
+            <h2>@skewer.SkewerName</h2>
+            <h3>@skewer.Price.ToString("c")</h3>
+            <h4>@skewer.Category.CategoryName</h4>
+        </div>
+    }
+</body>
+</html>
