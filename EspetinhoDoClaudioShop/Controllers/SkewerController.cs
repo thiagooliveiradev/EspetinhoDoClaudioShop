@@ -18,11 +18,11 @@ namespace EspetinhoDoClaudioShop.Controllers
 
         public IActionResult List()
         {
-            //ViewBag.CurrentCategory = "Espetinho de picanha";
+            //ViewBag.CurrentCategory = "Espetinhos";
             //return View(_skewerRepository.AllSkewers);
 
             SkewerListViewModel skewerListViewModel = new SkewerListViewModel
-                (_skewerRepository.AllSkewers, "Espetinho de picanha");
+                (_skewerRepository.AllSkewers, "Espetinhos");
             return View(skewerListViewModel);
         }
     }
