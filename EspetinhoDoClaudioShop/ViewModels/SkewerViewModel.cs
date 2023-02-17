@@ -17,4 +17,3 @@ namespace EspetinhoDoClaudioShop.ViewModels
             
     }
 }
-wwww
